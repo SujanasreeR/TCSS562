@@ -1,0 +1,19 @@
+create:
+create table yelp_db.tip_backup as select * from yelp_db.tip limit 0;drop table yelp_db.tip_backup
+
+insert:
+created a new table "create table yelp_db.user_backup"
+
+insert into yelp_db.user_backup values ('\''---12KK3aKOuomHnwAkAoX'\'', '\''Monica'\'', 0, '\''2018-05-27 00:00:00'\'', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);"
+
+row_count:
+select count(*) from yelp_db.review;
+
+read_inner_join:
+select user.id from yelp_db.user inner join yelp_db.elite_years on elite_years.user_id = user.id and year = 2017;
+
+update:
+update yelp_db.tip_backup set likes=150 where likes=1;
+
+delete:
+delete from yelp_db.tip_backup where likes=150;
