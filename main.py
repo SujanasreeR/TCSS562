@@ -47,3 +47,4 @@ def run_sql(event):
         conn.close()
     except Exception, e:
         print e
+        raise
