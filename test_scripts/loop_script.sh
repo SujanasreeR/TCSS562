@@ -1,4 +1,5 @@
 echo "elapsed_time,sleep_time_ms"
+# loop
 for ((i=1;i<=100;i++));
 do
 time1=( $(($(date +%s%N)/1000000)) )
